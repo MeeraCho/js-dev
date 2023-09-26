@@ -5,20 +5,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        
         <link rel="stylesheet" href="css/global.css">
-        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/shipping.css">
+        <!-- async downloads immediatly runs once download is complete
+        defer starts downloading immdiately runs only after the DOM is completed -->
+        <script src="js/main.js" defer></script>
     </head>
     <body>
-        <header>
-            
-            
-        </header>
-
-        <main>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam officiis explicabo laudantium aperiam ratione enim? Eius aspernatur labore asperiores officiis.</p>
-
-            <p>Amet quasi non laudantium laborum blanditiis dolorum pariatur, eum facere culpa maxime aspernatur dolorem quis eos dolore, unde dicta laboriosam!</p>
+        <!-- component calculator -->
+        <main id="calculator" class="calculator">
+            <img src="assets/img/svg/logo.svg" width="300" height="300" alt="shipping truck">
+            <h1>Shipping Calculator</h1>
+            <p>we beat the x out of our competition</p>
+            <output name="" for="" id="quotedPrice">
+                <sup>$</sup>
+                <span>0.00</span>
+            </output>
+            <!-- <input id="shippingWeight" type="text" value="32.02" name="weight" placeholder="Enter weight in KG">
+            <button id="getQuote">Get Quote</button> -->
+            <!-- <ul>
+                <li>bo</li>
+                <li>go</li>
+                <li>vo</li>
+            </ul> -->
+            <form id="calculatorForm" class="form-calculator" method="GET" action="">
+                <div tabindex="1">
+                    <label for="shippingWeight">Enter Shipping Weight In Kilograms</label>
+                    <input id="shippingWeight" tabindex="2" name="shippingWeight" type="number" placeholder="2.6KG" required>
+                    <button>Get Quote</button>
+                </div>
+            </form>
         </main>
-        <footer></footer>
     </body>
 </html>
